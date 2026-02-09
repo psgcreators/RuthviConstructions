@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="PASTE_CODE_HERE">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruthvi Constructions | Private Real Estate & Construction</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --obsidian:#07090c;
+  --midnight:#0d1117;
+  --antique-gold:#b89b5e;
+  --muted-gold:#8f7a4a;
+  --ivory:#f4f3ef;
+  --smoke:#9a9a9a;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--obsidian);
+  color:var(--ivory);
+  line-height:1.8;
+  letter-spacing:0.2px;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  width:100%;
+  padding:25px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(7,9,12,0.7);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+nav .logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.4rem;
+  color:var(--antique-gold);
+  letter-spacing:1px;
+}
+
+nav ul{
+  display:flex;
+  gap:50px;
+  list-style:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--smoke);
+  font-size:0.8rem;
+  letter-spacing:2px;
+}
+
+nav a:hover{
+  color:var(--antique-gold);
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 40px;
+  background:
+    linear-gradient(180deg, rgba(7,9,12,0.85), rgba(7,9,12,1));
+}
+
+.hero-content{
+  max-width:900px;
+  animation:fadeUp 2.5s ease;
+}
+
+.hero small{
+  letter-spacing:6px;
+  color:var(--muted-gold);
+  font-size:0.7rem;
+}
+
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:5rem;
+  margin:40px 0;
+  color:var(--antique-gold);
+}
+
+.hero h1 span{
+  color:var(--ivory);
+  font-weight:500;
+}
+
+.divider{
+  width:140px;
+  height:1px;
+  margin:40px auto;
+  background:linear-gradient(to right, transparent, var(--antique-gold), transparent);
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#d0d0d0;
+}
+
+.hero button{
+  margin-top:70px;
+  padding:20px 70px;
+  border-radius:80px;
+  border:1px solid var(--antique-gold);
+  background:transparent;
+  color:var(--antique-gold);
+  letter-spacing:2px;
+  font-size:0.75rem;
+  cursor:pointer;
+  transition:0.6s;
+}
+
+.hero button:hover{
+  background:var(--antique-gold);
+  color:#000;
+  box-shadow:0 30px 80px rgba(184,155,94,0.4);
+}
+
+/* SECTIONS */
+section{
+  max-width:1400px;
+  margin:auto;
+  padding:160px 120px;
+}
+
+section h2{
+  font-family:'Playfair Display',serif;
+  font-size:2.6rem;
+  color:var(--antique-gold);
+  margin-bottom:40px;
+}
+
+section p{
+  max-width:800px;
+  color:#cfcfcf;
+}
+
+/* EXPERTISE */
+.expertise{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:80px;
+  margin-top:80px;
+}
+
+.expertise div{
+  border-left:1px solid var(--muted-gold);
+  padding-left:30px;
+}
+
+.expertise h3{
+  font-family:'Playfair Display',serif;
+  color:var(--ivory);
+  margin-bottom:15px;
+}
+
+/* PORTFOLIO */
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:60px;
+  margin-top:80px;
+}
+
+.portfolio div{
+  padding:40px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(184,155,94,0.15);
+}
+
+/* CONTACT */
+.contact{
+  background:var(--midnight);
+  text-align:center;
+}
+
+.contact p{
+  margin:auto;
+}
+
+.contact button{
+  margin-top:50px;
+  padding:18px 60px;
+  border-radius:70px;
+  border:1px solid var(--antique-gold);
+  background:transparent;
+  color:var(--antique-gold);
+  
+  letter-spacing:2px;
+  cursor:pointer;
+}
+
+footer{
+  text-align:center;
+  padding:60px;
+  font-size:0.7rem;
+  letter-spacing:2px;
+  color:var(--smoke);
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(50px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@media(max-width:900px){
+  nav{padding:25px 30px;}
+  section{padding:120px 40px;}
+  .hero h1{font-size:3.5rem;}
+}
+.cta-btn{
+  display:inline-block;
+  margin-top:70px;
+  padding:20px 70px;
+  border-radius:80px;
+  border:1px solid var(--antique-gold);
+  background:transparent;
+  color:var(--antique-gold);
+  letter-spacing:2px;
+  font-size:0.75rem;
+  text-decoration:none;
+  transition:0.6s;
+}
+
+.cta-btn:hover{
+  background:var(--antique-gold);
+  color:#000;
+  box-shadow:0 30px 80px rgba(184,155,94,0.4);
+}
+/* Instagram (Luxury Footer Link) */
+.social-link{
+  text-decoration:none;
+  color:var(--muted-gold);
+  font-size:0.65rem;
+  letter-spacing:4px;
+  transition:0.4s;
+}
+
+.social-link:hover{
+  color:var(--antique-gold);
+}
+/* Footer social fix */
+.footer-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
+}
+
+.footer-social{
+  margin-top:10px;
+}
+
+.social-link{
+  text-decoration:none;
+  color:var(--muted-gold);
+  font-size:0.65rem;
+  letter-spacing:4px;
+  transition:0.4s;
+}
+
+.social-link:hover{
+  color:var(--antique-gold);
+}
+/* Enquiry Actions */
+.enquiry-actions{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:22px;
+  margin-top:50px;
+}
+
+.secondary-enquiry{
+  padding:14px 46px;
+  border-radius:60px;
+  border:1px solid var(--muted-gold);
+  color:var(--muted-gold);
+  text-decoration:none;
+  font-size:0.65rem;
+  letter-spacing:3px;
+  transition:0.5s;
+}
+
+.secondary-enquiry:hover{
+  color:#000;
+  background:var(--antique-gold);
+  border-color:var(--antique-gold);
+  box-shadow:0 25px 60px rgba(184,155,94,0.35);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Ruthvi Constructions</div>
+  <ul>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#expertise">EXPERTISE</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#contact">ENQUIRY</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <small>PRIVATE REAL ESTATE & CONSTRUCTION</small>
+    <h1>Ruthvi <span>Constructions</span></h1>
+    <div class="divider"></div>
+    <p>
+      A legacy construction house delivering architecturally refined residences
+      and commercial landmarks with discretion, precision, and enduring value.
+    </p>
+    <a href="mailto:horseforcegroup@gmail.com" class="cta-btn">
+  REQUEST CONFIDENTIAL CONSULTATION
+</a>
+ 
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>Legacy & Vision</h2>
+  <p>
+    Ruthvi Constructions operates at the intersection of engineering excellence
+    and refined architectural sensibility. Each project is approached as a
+    long-term asset — built to endure, appreciate, and represent timeless value.
+  </p>
+</section>
+
+<section id="expertise">
+  <h2>Expertise</h2>
+  <div class="expertise">
+    <div>
+      <h3>Luxury Residences</h3>
+      <p>Ultra-premium villas, bespoke homes, and elite residential developments.</p>
+    </div>
+    <div>
+      <h3>Commercial Assets</h3>
+      <p>High-value commercial spaces designed for longevity and return.</p>
+    </div>
+    <div>
+      <h3>Turnkey Execution</h3>
+      <p>Complete design-to-delivery with absolute discretion and precision.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Selected Portfolio</h2>
+  <div class="portfolio">
+    <div>Private Villa Developments</div>
+    <div>Premium Residential Projects</div>
+    <div>Commercial & Mixed-Use Assets</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Private Enquiry</h2>
+
+    Engagements are accepted by consultation only.<br>
+    Connect directly for a confidential discussion.
+  </p>
+
+  
+
+  <button onclick="window.location.href='tel:+919538601202'">
+    CALL FOR CONSULTATION
+  </button>
+<div class="enquiry-actions">
+    
+
+    <a href="https://www.instagram.com/YOUR_INSTAGRAM_ID"
+       target="_blank"
+       class="secondary-enquiry">
+      SELECTED WORKS — INSTAGRAM
+    </a>
+  </div>
+<br>
+<br>
+  <p>
+    Engagements are accepted by consultation only.
+    Please reach out to initiate a confidential discussion.
+  </p>
+
+  
+</section>
+
+<footer>
+  <div class="footer-inner">
+    © 2026 RUTHVI CONSTRUCTIONS — ALL RIGHTS RESERVED
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/YOUR_INSTAGRAM_ID"
+         target="_blank"
+         class="social-link">
+        INSTAGRAM
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
